@@ -5,9 +5,55 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(135deg, #87CEEB, #F5F5DC);
+  min-height: 100vh;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+  color: #4A4A4A;
+}
+
+/* Form styles */
+.form-control {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #48D1CC;
+  color: #4A4A4A;
+}
+
+.form-control:focus {
+  border-color: #20B2AA;
+  box-shadow: 0 0 0 0.2rem rgba(32, 178, 170, 0.25);
+}
+
+.form-label {
+  color: #4A4A4A;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #48D1CC;
+  border-color: #48D1CC;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #20B2AA;
+  border-color: #20B2AA;
+}
+
+/* Toast styles */
+.toastify-toast {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #48D1CC;
+  color: #4A4A4A;
+}
+
+.toastify-toast--success {
+  border-color: #20B2AA;
+}
+
+.toastify-toast--error {
+  border-color: #FF4444;
 }

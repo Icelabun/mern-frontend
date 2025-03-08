@@ -63,12 +63,12 @@ const SageTrainingApplicationForm = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <h4 className="mb-4">Sage Training Institution Application</h4>
+    <div className="bg-light p-4 rounded-3" style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", backdropFilter: "blur(10px)" }}>
+      <form onSubmit={handleSubmit} className="bg-white p-4 rounded-3 shadow-sm">
+        <h4 className="mb-4" style={{ color: "#000000" }}>Sage Training Institution Application</h4>
 
         {/* Welcome Message */}
-        <p className="mb-4 text-muted">
+        <p className="mb-4 text-muted" style={{ color: "#000000" }}>
           Welcome to Sage Training Institution! Please fill out the application form below to get started with your journey.
         </p>
 
@@ -76,7 +76,7 @@ const SageTrainingApplicationForm = () => {
         {page === 1 && (
           <div>
             <div className="mb-3">
-              <label className="form-label">Full Name</label>
+              <label className="form-label" style={{ color: "#000000" }}>Full Name</label>
               <input
                 type="text"
                 className="form-control"
@@ -84,10 +84,11 @@ const SageTrainingApplicationForm = () => {
                 value={formData.fullName}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
             <div className="mb-3">
-              <label className="form-label">Date of Birth</label>
+              <label className="form-label" style={{ color: "#000000" }}>Date of Birth</label>
               <input
                 type="date"
                 className="form-control"
@@ -95,16 +96,18 @@ const SageTrainingApplicationForm = () => {
                 value={formData.dateOfBirth}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
             <div className="mb-3">
-              <label className="form-label">Gender</label>
+              <label className="form-label" style={{ color: "#000000" }}>Gender</label>
               <select
                 className="form-select"
                 name="gender"
                 value={formData.gender}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               >
                 <option value="">Select Gender</option>
                 <option value="Male">Male</option>
@@ -112,7 +115,7 @@ const SageTrainingApplicationForm = () => {
               </select>
             </div>
             <div className="mb-3">
-              <label className="form-label">Nationality</label>
+              <label className="form-label" style={{ color: "#000000" }}>Nationality</label>
               <input
                 type="text"
                 className="form-control"
@@ -120,6 +123,7 @@ const SageTrainingApplicationForm = () => {
                 value={formData.nationality}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
           </div>
@@ -129,7 +133,7 @@ const SageTrainingApplicationForm = () => {
         {page === 2 && (
           <div>
             <div className="mb-3">
-              <label className="form-label">Email</label>
+              <label className="form-label" style={{ color: "#000000" }}>Email</label>
               <input
                 type="email"
                 className="form-control"
@@ -137,10 +141,11 @@ const SageTrainingApplicationForm = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
             <div className="mb-3">
-              <label className="form-label">Phone Number</label>
+              <label className="form-label" style={{ color: "#000000" }}>Phone Number</label>
               <input
                 type="tel"
                 className="form-control"
@@ -148,16 +153,18 @@ const SageTrainingApplicationForm = () => {
                 value={formData.phone}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
             <div className="mb-3">
-              <label className="form-label">Address</label>
+              <label className="form-label" style={{ color: "#000000" }}>Address</label>
               <textarea
                 className="form-control"
                 name="address"
                 value={formData.address}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
           </div>
@@ -167,7 +174,7 @@ const SageTrainingApplicationForm = () => {
         {page === 3 && (
           <div>
             <div className="mb-3">
-              <label className="form-label">Current School</label>
+              <label className="form-label" style={{ color: "#000000" }}>Current School</label>
               <input
                 type="text"
                 className="form-control"
@@ -175,10 +182,11 @@ const SageTrainingApplicationForm = () => {
                 value={formData.currentSchool}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
             <div className="mb-3">
-              <label className="form-label">Grade/Level</label>
+              <label className="form-label" style={{ color: "#000000" }}>Grade/Level</label>
               <input
                 type="text"
                 className="form-control"
@@ -186,10 +194,11 @@ const SageTrainingApplicationForm = () => {
                 value={formData.grade}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
             <div className="mb-3">
-              <label className="form-label">Course/Program Interested In</label>
+              <label className="form-label" style={{ color: "#000000" }}>Course/Program Interested In</label>
               <input
                 type="text"
                 className="form-control"
@@ -197,10 +206,11 @@ const SageTrainingApplicationForm = () => {
                 value={formData.course}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
             <div className="mb-3">
-              <label className="form-label">Preferred Start Date</label>
+              <label className="form-label" style={{ color: "#000000" }}>Preferred Start Date</label>
               <input
                 type="date"
                 className="form-control"
@@ -208,6 +218,7 @@ const SageTrainingApplicationForm = () => {
                 value={formData.startDate}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
           </div>
@@ -217,7 +228,7 @@ const SageTrainingApplicationForm = () => {
         {page === 4 && (
           <div>
             <div className="mb-3">
-              <label className="form-label">Emergency Contact Name</label>
+              <label className="form-label" style={{ color: "#000000" }}>Emergency Contact Name</label>
               <input
                 type="text"
                 className="form-control"
@@ -225,10 +236,11 @@ const SageTrainingApplicationForm = () => {
                 value={formData.emergencyContactName}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
             <div className="mb-3">
-              <label className="form-label">Emergency Contact Phone</label>
+              <label className="form-label" style={{ color: "#000000" }}>Emergency Contact Phone</label>
               <input
                 type="tel"
                 className="form-control"
@@ -236,28 +248,31 @@ const SageTrainingApplicationForm = () => {
                 value={formData.emergencyContactPhone}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
             <div className="mb-3">
-              <label className="form-label">Additional Message</label>
+              <label className="form-label" style={{ color: "#000000" }}>Additional Message</label>
               <textarea
                 className="form-control"
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 required
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.95)", borderColor: "#000000", color: "#000000" }}
               />
             </div>
           </div>
         )}
 
         {/* Navigation buttons */}
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-between mt-4">
           {page > 1 && (
             <button
               type="button"
-              className="btn btn-outline-secondary"
+              className="btn btn-outline-primary"
               onClick={handlePreviousPage}
+              style={{ borderColor: "#000000", color: "#000000" }}
             >
               Previous
             </button>
@@ -267,11 +282,16 @@ const SageTrainingApplicationForm = () => {
               type="button"
               className="btn btn-primary"
               onClick={handleNextPage}
+              style={{ backgroundColor: "#000000", borderColor: "#000000", color: "#ffffff" }}
             >
               Next
             </button>
           ) : (
-            <button type="submit" className="btn btn-success">
+            <button
+              type="submit"
+              className="btn btn-success"
+              style={{ backgroundColor: "#000000", borderColor: "#000000", color: "#ffffff" }}
+            >
               Submit Application
             </button>
           )}
